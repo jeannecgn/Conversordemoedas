@@ -1,0 +1,41 @@
+<div class="container">
+  <h1 class="page-title">
+    Conversor de moedas
+  </h1>
+  <link href="https://jeannecgn.github.io/Conversordemoedas/style.css" rel="stylesheet" />
+        <script src="https://jeannecgn.github.io/Conversordemoedas/scripts.js"></script>
+  <p class="page-subtitle">
+    Descubra os valores em Real (R$), Dolar (US$), Euro(€) e BitCoin (฿).
+  </p>
+  <div class="alura-link">
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
+    <p class="infoselect"> Selecione qual a moeda que deseja converter:
+    <p>
+      <select id="entradaMoeda">
+        <option value="realEntrada"> Real (R$) </option>
+        <option value="dolarEntrada"> Dolar (US$) </option>
+        <option value="euroEntrada">Euro (€) </option>
+        <option value="btcEntrada"> BitCoin(฿) </option>
+
+      </select>
+      <span class="textpara">&nbsp → &nbsp</span>
+      <select id="saidaMoeda">
+        <option value="dolarSaida"> Dolar (US$) </option>
+        <option value="euroSaida"> Euro (€) </option>
+        <option value="btcSaida"> BitCoin(฿)</option>
+        <option value="realSaida"> Real (R$) </option>
+      </select> <br> <br>
+  </div>
+  <div class="valores-container">
+    <fieldset class="valores-input">
+
+      <label for="moeda">Insira o valor</label><br>
+      <input type="number" id="valor" size="2" /><br>
+      <button type="submit" onclick="Converter()">Converter</button>
+      <h2 id="valorConvertido"></h2>
+      <p class="data-cotacao">Cotação do dia 07/09/2022
+      <p>
+  </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+</div>
